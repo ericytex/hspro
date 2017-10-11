@@ -17,7 +17,16 @@ namespace hspro
         {
             InitializeComponent();
         }
-        
-        
+
+        private void Submit_Click(object sender, EventArgs e)
+        {
+            int smartcount;
+            int invoicecount;
+            int compliance;
+
+
+        }
+
+
     }
 }

@@ -33,6 +33,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.Compliance = new System.Windows.Forms.GroupBox();
+            this.Submit = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,7 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.postbnt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.Compliance.SuspendLayout();
@@ -56,6 +57,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(659, 319);
             this.dataGridView1.TabIndex = 0;
+           
             // 
             // panel1
             // 
@@ -67,6 +69,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.postbnt);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.Compliance);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -86,7 +89,7 @@
             // 
             // Compliance
             // 
-            this.Compliance.Controls.Add(this.button1);
+            this.Compliance.Controls.Add(this.Submit);
             this.Compliance.Controls.Add(this.label6);
             this.Compliance.Controls.Add(this.dateTimePicker1);
             this.Compliance.Controls.Add(this.label5);
@@ -102,6 +105,20 @@
             this.Compliance.TabIndex = 0;
             this.Compliance.TabStop = false;
             this.Compliance.Text = "Compliance";
+            // 
+            // Submit
+            // 
+            this.Submit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Submit.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Submit.Location = new System.Drawing.Point(385, 57);
+            this.Submit.Name = "Submit";
+            this.Submit.Size = new System.Drawing.Size(88, 27);
+            this.Submit.TabIndex = 9;
+            this.Submit.Text = "Check";
+            this.Submit.UseVisualStyleBackColor = false;
+            this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
             // label6
             // 
@@ -176,19 +193,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Service Provider";
             // 
-            // button1
+            // postbnt
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(385, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 27);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
-            
+            this.postbnt.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.postbnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.postbnt.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.postbnt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.postbnt.Location = new System.Drawing.Point(524, 70);
+            this.postbnt.Name = "postbnt";
+            this.postbnt.Size = new System.Drawing.Size(88, 27);
+            this.postbnt.TabIndex = 10;
+            this.postbnt.Text = "Post";
+            this.postbnt.UseVisualStyleBackColor = false;
             // 
             // css_compliance
             // 
@@ -225,6 +241,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Submit;
+        private System.Windows.Forms.Button postbnt;
     }
 }
